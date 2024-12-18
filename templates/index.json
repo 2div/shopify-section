@@ -185,7 +185,7 @@
           "type": "banner",
           "settings": {
             "desktop_image": "shopify://shop_images/frustrated-man-on-computer.jpg",
-            "mobile_image": "shopify://shop_images/working-at-night.jpg",
+            "mobile_image": "shopify://shop_images/organized-workspace.jpg",
             "heading": "SHOP NOW",
             "body_text": "",
             "cta1_url": "shopify://collections/all",
