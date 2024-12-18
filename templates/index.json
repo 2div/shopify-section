@@ -9,48 +9,6 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/man-adjusts-his-shirt-cuffs-below-watch.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "dynamic_banner_RwDx4E": {
       "type": "dynamic-banner",
       "blocks": {
@@ -74,8 +32,8 @@
         "banner_yHU6PH"
       ],
       "settings": {
-        "grid_gap": 1,
-        "margin_bottom": 1,
+        "grid_gap": 0.5,
+        "margin_bottom": 2,
         "button_background_color": "#2c7783",
         "button_font_color": "#fff",
         "border_color": "#ffffff",
@@ -97,6 +55,54 @@
         "body_font_mob": 1.6,
         "body_font_weight": 200,
         "body_font__color": "#ffffff"
+      }
+    },
+    "dynamic_banner_3PrPbH": {
+      "type": "dynamic-banner",
+      "blocks": {
+        "banner_F9PV6Y": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify://shop_images/man-in-french-cuff-fashion.jpg",
+            "mobile_image": "shopify://shop_images/mens-watch-and-ring.jpg",
+            "heading": "New Styles",
+            "body_text": "Sale on all brands",
+            "cta1_url": "shopify://collections/all",
+            "cta1_label": "",
+            "enable_fullgrid": true,
+            "cta2_url": "",
+            "cta2_label": "",
+            "content_alignment": "center-start"
+          }
+        }
+      },
+      "block_order": [
+        "banner_F9PV6Y"
+      ],
+      "settings": {
+        "grid_gap": 1,
+        "margin_bottom": 1.5,
+        "button_background_color": "",
+        "button_font_color": "#ffffff",
+        "border_color": "#ffffff",
+        "padding_y": 0.1,
+        "padding_x": 3,
+        "border_width": 2,
+        "border_radius": 0,
+        "button_font_dsk": 2,
+        "button_font_mob": 1.6,
+        "button_font_weight": 200,
+        "button_margin_top": 2,
+        "button_text_transformation": "uppercase",
+        "text_transformation": "uppercase",
+        "heading_font_dsk": 7,
+        "heading_font_mob": 4,
+        "heading_font_weight": 600,
+        "heading_font__color": "#ffffff",
+        "body_font_dsk": 3.2,
+        "body_font_mob": 1.6,
+        "body_font_weight": 200,
+        "body_font__color": "#dd1d1d"
       }
     },
     "dynamic_banner_DqUmgD": {
@@ -139,7 +145,7 @@
       ],
       "settings": {
         "grid_gap": 1,
-        "margin_bottom": 1,
+        "margin_bottom": 2,
         "button_background_color": "#327c0a",
         "button_font_color": "#f7f7f7",
         "border_color": "#ffffff",
@@ -219,7 +225,7 @@
       ],
       "settings": {
         "grid_gap": 1,
-        "margin_bottom": 1,
+        "margin_bottom": 2,
         "button_background_color": "#2917b0",
         "button_font_color": "#f7f7f7",
         "border_color": "#ffffff",
@@ -242,61 +248,12 @@
         "body_font_weight": 200,
         "body_font__color": "#dd1d1d"
       }
-    },
-    "dynamic_banner_3PrPbH": {
-      "type": "dynamic-banner",
-      "blocks": {
-        "banner_F9PV6Y": {
-          "type": "banner",
-          "settings": {
-            "desktop_image": "shopify://shop_images/man-in-french-cuff-fashion.jpg",
-            "mobile_image": "shopify://shop_images/mens-watch-and-ring.jpg",
-            "heading": "New Styles",
-            "body_text": "Sale on all brands",
-            "cta1_url": "shopify://collections/all",
-            "cta1_label": "",
-            "enable_fullgrid": true,
-            "cta2_url": "",
-            "cta2_label": "",
-            "content_alignment": "center-start"
-          }
-        }
-      },
-      "block_order": [
-        "banner_F9PV6Y"
-      ],
-      "settings": {
-        "grid_gap": 1,
-        "margin_bottom": 1,
-        "button_background_color": "",
-        "button_font_color": "#ffffff",
-        "border_color": "#ffffff",
-        "padding_y": 0.1,
-        "padding_x": 3,
-        "border_width": 2,
-        "border_radius": 0,
-        "button_font_dsk": 2,
-        "button_font_mob": 1.6,
-        "button_font_weight": 200,
-        "button_margin_top": 2,
-        "button_text_transformation": "uppercase",
-        "text_transformation": "uppercase",
-        "heading_font_dsk": 7,
-        "heading_font_mob": 4,
-        "heading_font_weight": 600,
-        "heading_font__color": "#ffffff",
-        "body_font_dsk": 3.2,
-        "body_font_mob": 1.6,
-        "body_font_weight": 200,
-        "body_font__color": "#dd1d1d"
-      }
     }
   },
   "order": [
-    "image_banner",
     "dynamic_banner_RwDx4E",
+    "dynamic_banner_3PrPbH",
     "dynamic_banner_DqUmgD",
-    "dynamic_banner_gaYU6q",
-    "dynamic_banner_3PrPbH"
+    "dynamic_banner_gaYU6q"
   ]
 }
