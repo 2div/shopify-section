@@ -187,7 +187,7 @@
             "desktop_image": "shopify://shop_images/frustrated-man-on-computer.jpg",
             "mobile_image": "shopify://shop_images/organized-workspace.jpg",
             "heading": "SHOP NOW",
-            "body_text": "",
+            "body_text": "Sale on all brands",
             "cta1_url": "shopify://collections/all",
             "cta1_label": "",
             "enable_fullgrid": true,
@@ -201,14 +201,14 @@
           "settings": {
             "desktop_image": "shopify://shop_images/office-woman-hands-on-report.jpg",
             "mobile_image": "shopify://shop_images/preparing-for-travel.jpg",
-            "heading": "",
-            "body_text": "",
-            "cta1_url": "",
-            "cta1_label": "",
+            "heading": "New Brands",
+            "body_text": "Check our new brands",
+            "cta1_url": "shopify://collections/all",
+            "cta1_label": "Buy Now",
             "enable_fullgrid": false,
-            "cta2_url": "",
-            "cta2_label": "",
-            "content_alignment": "center-center"
+            "cta2_url": "shopify://collections/all",
+            "cta2_label": "Buy NOW",
+            "content_alignment": "start-center"
           }
         }
       },
@@ -240,7 +240,7 @@
         "body_font_dsk": 1.6,
         "body_font_mob": 1.6,
         "body_font_weight": 200,
-        "body_font__color": "#ffffff"
+        "body_font__color": "#dd1d1d"
       }
     }
   },
