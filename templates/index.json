@@ -102,6 +102,19 @@
     "dynamic_banner_DqUmgD": {
       "type": "dynamic-banner",
       "blocks": {
+        "banner_dGJAFN": {
+          "type": "banner",
+          "settings": {
+            "heading": "",
+            "body_text": "",
+            "cta1_url": "",
+            "cta1_label": "",
+            "enable_fullgrid": false,
+            "cta2_url": "",
+            "cta2_label": "",
+            "content_alignment": "center-center"
+          }
+        },
         "banner_bAUpGA": {
           "type": "banner",
           "settings": {
@@ -134,6 +147,7 @@
         }
       },
       "block_order": [
+        "banner_dGJAFN",
         "banner_bAUpGA",
         "banner_zPeDmP"
       ],
@@ -152,8 +166,8 @@
         "button_font_weight": 200,
         "button_margin_top": 2,
         "button_text_transformation": "uppercase",
-        "text_transformation": "uppercase",
-        "heading_font_dsk": 8,
+        "text_transformation": "capitalize",
+        "heading_font_dsk": 4,
         "heading_font_mob": 3,
         "heading_font_weight": 600,
         "heading_font__color": "#ffffff",
