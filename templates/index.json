@@ -105,6 +105,8 @@
         "banner_bAUpGA": {
           "type": "banner",
           "settings": {
+            "desktop_image": "shopify://shop_images/the-man-in-the-hat.jpg",
+            "mobile_image": "shopify://shop_images/grooms-prep-kit-for-wedding.jpg",
             "heading": "",
             "body_text": "",
             "cta1_url": "",
@@ -152,7 +154,7 @@
         "button_text_transformation": "uppercase",
         "text_transformation": "uppercase",
         "heading_font_dsk": 8,
-        "heading_font_mob": 4,
+        "heading_font_mob": 3,
         "heading_font_weight": 600,
         "heading_font__color": "#ffffff",
         "body_font_dsk": 1.6,
