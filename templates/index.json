@@ -102,32 +102,19 @@
     "dynamic_banner_DqUmgD": {
       "type": "dynamic-banner",
       "blocks": {
-        "banner_dGJAFN": {
-          "type": "banner",
-          "settings": {
-            "heading": "",
-            "body_text": "",
-            "cta1_url": "",
-            "cta1_label": "",
-            "enable_fullgrid": false,
-            "cta2_url": "",
-            "cta2_label": "",
-            "content_alignment": "center-center"
-          }
-        },
         "banner_bAUpGA": {
           "type": "banner",
           "settings": {
             "desktop_image": "shopify://shop_images/the-man-in-the-hat.jpg",
             "mobile_image": "shopify://shop_images/grooms-prep-kit-for-wedding.jpg",
-            "heading": "",
+            "heading": "Summer Style",
             "body_text": "",
-            "cta1_url": "",
-            "cta1_label": "",
+            "cta1_url": "shopify://collections/all",
+            "cta1_label": "Buy Now",
             "enable_fullgrid": false,
-            "cta2_url": "",
+            "cta2_url": "shopify://collections/all",
             "cta2_label": "",
-            "content_alignment": "center-center"
+            "content_alignment": "end-center"
           }
         },
         "banner_zPeDmP": {
@@ -147,7 +134,6 @@
         }
       },
       "block_order": [
-        "banner_dGJAFN",
         "banner_bAUpGA",
         "banner_zPeDmP"
       ],
@@ -155,7 +141,7 @@
         "grid_gap": 1,
         "margin_bottom": 1,
         "button_background_color": "#327c0a",
-        "button_font_color": "#ffffff",
+        "button_font_color": "#f7f7f7",
         "border_color": "#ffffff",
         "padding_y": 1.3,
         "padding_x": 3,
