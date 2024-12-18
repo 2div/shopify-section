@@ -162,11 +162,76 @@
         "body_font_weight": 200,
         "body_font__color": "#ffffff"
       }
+    },
+    "dynamic_banner_gaYU6q": {
+      "type": "dynamic-banner",
+      "blocks": {
+        "banner_ecgmqc": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify://shop_images/frustrated-man-on-computer.jpg",
+            "mobile_image": "shopify://shop_images/working-at-night.jpg",
+            "heading": "",
+            "body_text": "",
+            "cta1_url": "",
+            "cta1_label": "",
+            "enable_fullgrid": false,
+            "cta2_url": "",
+            "cta2_label": "",
+            "content_alignment": "center-center"
+          }
+        },
+        "banner_eNMFJ9": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify://shop_images/office-woman-hands-on-report.jpg",
+            "mobile_image": "shopify://shop_images/preparing-for-travel.jpg",
+            "heading": "",
+            "body_text": "",
+            "cta1_url": "",
+            "cta1_label": "",
+            "enable_fullgrid": false,
+            "cta2_url": "",
+            "cta2_label": "",
+            "content_alignment": "center-center"
+          }
+        }
+      },
+      "block_order": [
+        "banner_ecgmqc",
+        "banner_eNMFJ9"
+      ],
+      "settings": {
+        "grid_gap": 1,
+        "margin_bottom": 1,
+        "button_background_color": "",
+        "button_font_color": "#ffffff",
+        "border_color": "#ffffff",
+        "padding_y": 0.1,
+        "padding_x": 3,
+        "border_width": 2,
+        "border_radius": 0,
+        "button_font_dsk": 2,
+        "button_font_mob": 1.6,
+        "button_font_weight": 200,
+        "button_margin_top": 2,
+        "button_text_transformation": "uppercase",
+        "text_transformation": "uppercase",
+        "heading_font_dsk": 8,
+        "heading_font_mob": 4,
+        "heading_font_weight": 600,
+        "heading_font__color": "#ffffff",
+        "body_font_dsk": 1.6,
+        "body_font_mob": 1.6,
+        "body_font_weight": 200,
+        "body_font__color": "#ffffff"
+      }
     }
   },
   "order": [
     "image_banner",
     "dynamic_banner_RwDx4E",
-    "dynamic_banner_DqUmgD"
+    "dynamic_banner_DqUmgD",
+    "dynamic_banner_gaYU6q"
   ]
 }
