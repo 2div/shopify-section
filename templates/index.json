@@ -280,14 +280,14 @@
         "button_margin_top": 2,
         "button_text_transformation": "uppercase",
         "text_transformation": "uppercase",
-        "heading_font_dsk": 5,
+        "heading_font_dsk": 7,
         "heading_font_mob": 4,
         "heading_font_weight": 600,
         "heading_font__color": "#ffffff",
-        "body_font_dsk": 1.6,
+        "body_font_dsk": 3.2,
         "body_font_mob": 1.6,
         "body_font_weight": 200,
-        "body_font__color": "#ffffff"
+        "body_font__color": "#dd1d1d"
       }
     }
   },
