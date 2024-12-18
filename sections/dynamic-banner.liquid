@@ -1,0 +1,525 @@
+{% schema %}
+{
+  "name": "Dynamic Banner Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Grid Design"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid Gap",
+      "min": 0.5,
+      "step": 0.5,
+      "max": 3,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "min": 0.5,
+      "step": 0.5,
+      "max": 3,
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Button Design"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "button_font_color",
+      "label": "Font Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Padding Top/Bottom",
+      "min": 0.1,
+      "step": 0.1,
+      "max": 10,
+      "default": 0.1
+    },
+    {
+      "type": "range",
+      "id": "padding_x",
+      "label": "Padding Left/Right",
+      "step": 0.5,
+      "min": 0.5,
+      "max": 5,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border Width",
+      "step": 0.5,
+      "min": 1,
+      "max": 4,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border Radius",
+      "step": 0.5,
+      "min": 0,
+      "max": 10,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "button_font_dsk",
+      "label": "Font Size[Desktop]",
+      "step": 0.1,
+      "min": 1.6,
+      "max": 10,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "button_font_mob",
+      "label": "Font Size[Mobile]",
+      "step": 0.1,
+      "min": 1.6,
+      "max": 10,
+      "default": 1.6
+    },
+    {
+      "type": "range",
+      "id": "button_font_weight",
+      "label": "Font Weight",
+      "step": 100,
+      "min": 100,
+      "max": 800,
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "button_margin_top",
+      "label": "Margin Top",
+      "min": 0,
+      "step": 1,
+      "max": 8,
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "button_text_transformation",
+      "label": "Text Transformation",
+      "options": [{
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        },
+        {
+          "value": "none",
+          "label": "Default"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "header",
+      "content": "Content Design[Header]"
+    },
+    {
+      "type": "select",
+      "id": "text_transformation",
+      "label": "Text Transformation",
+      "options": [{
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        },
+        {
+          "value": "none",
+          "label": "Default"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_dsk",
+      "label": "Font Size[Desktop]",
+      "step": 1,
+      "min": 1,
+      "max": 12,
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "heading_font_mob",
+      "label": "Font Size[Mobile]",
+      "step": 1,
+      "min": 1,
+      "max": 12,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "heading_font_weight",
+      "label": "Font Weight",
+      "step": 100,
+      "min": 100,
+      "max": 800,
+      "default": 600
+    },
+
+    {
+      "type": "color",
+      "id": "heading_font__color",
+      "label": "Font Color",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "header",
+      "content": "Content Design[Body Text]"
+    },
+    {
+      "type": "range",
+      "id": "body_font_dsk",
+      "label": "Font Size[Desktop]",
+      "step": 0.1,
+      "min": 1.4,
+      "max": 10,
+      "default": 1.6
+    },
+    {
+      "type": "range",
+      "id": "body_font_mob",
+      "label": "Font Size[Mobile]",
+      "step": 0.1,
+      "min": 1.4,
+      "max": 10,
+      "default": 1.6
+    },
+    {
+      "type": "range",
+      "id": "body_font_weight",
+      "label": "Font Weight",
+      "step": 100,
+      "min": 100,
+      "max": 800,
+      "default": 200
+    },
+
+    {
+      "type": "color",
+      "id": "body_font__color",
+      "label": "Font Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [{
+    "type": "banner",
+    "name": "Banner",
+    "limit": 3,
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "desktop_image",
+        "label": "Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "body_text",
+        "label": "Body Text"
+      },
+      {
+        "type": "url",
+        "id": "cta1_url",
+        "label": "CTA 1 URL"
+      },
+      {
+        "type": "text",
+        "id": "cta1_label",
+        "label": "CTA 1 Label"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_fullgrid",
+        "label": "Enable full grid"
+      },
+      {
+        "type": "url",
+        "id": "cta2_url",
+        "label": "CTA 2 URL"
+      },
+      {
+        "type": "text",
+        "id": "cta2_label",
+        "label": "CTA 2 Label"
+      },
+      {
+        "type": "select",
+        "id": "content_alignment",
+        "label": "Content Alignment",
+        "options": [{
+            "value": "start-start",
+            "label": "Start Start"
+          },
+          {
+            "value": "start-center",
+            "label": "Start Center"
+          },
+          {
+            "value": "start-end",
+            "label": "Start End"
+          },
+          {
+            "value": "center-start",
+            "label": "Center Start"
+          },
+          {
+            "value": "center-center",
+            "label": "Center Center"
+          },
+          {
+            "value": "center-end",
+            "label": "Center End"
+          },
+          {
+            "value": "end-start",
+            "label": "End Start"
+          },
+          {
+            "value": "end-center",
+            "label": "End Center"
+          },
+          {
+            "value": "end-end",
+            "label": "End End"
+          }
+        ],
+        "default": "center-center"
+      }
+    ]
+  }],
+  "presets": [{
+    "name": "Dynamic Banner 2",
+    
+  }]
+}
+{% endschema %}
+<style>    
+.dynamic-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+  
+  .dynamic-banner__item {
+    position: relative;
+    height: fit-content;
+  }
+ .dynamic-banner__item-1{
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .dynamic-banner__item{
+    flex: 1 1 100%!important;
+    max-width: 100%!important;
+  }
+}
+.dynamic-banner__item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.dynamic-banner__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+}
+
+.dynamic-banner__button {
+  text-decoration: none;
+  margin: 0.5rem 0;
+  line-height: 1;
+}
+  .dynamic-banner__button-container {
+    gap: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  .dynamic-banner_v-start{
+    justify-content: start;
+  }
+  .dynamic-banner_v-center{
+    justify-content: center;
+  }
+  .dynamic-banner_v-end{
+    justify-content: end;
+  }
+  .dynamic-banner_h-center{
+    align-items: center;
+  }
+  .dynamic-banner_h-start{
+    align-items: start;
+  }
+  .dynamic-banner_h-end{
+    align-items: end;
+  }
+   
+.dynamic-banner__item img {
+    height: 100%!important;
+}
+
+
+.dynamic-banner__item {
+    height: auto!important;
+}
+  :root{
+    --button-backkground-color{{section.id | handleize}}: {% if section.settings.button_background_color.rgba  != "" %}{{ section.settings.button_background_color.rgba }}{% else %}transparant{% endif %};
+    --button-text-color{{section.id | handleize}}: {% if section.settings.button_font_color.rgba  != "" %}{{ section.settings.button_font_color.rgba }}{% else %}transparant{% endif %};
+    --button-border-color{{section.id | handleize}}: {% if section.settings.border_color.rgba  != "" %}{{ section.settings.border_color.rgba }}{% else %}transparant{% endif %};
+  
+    --button-padding_y{{section.id | handleize}}: {% if section.settings.padding_y %}{{ section.settings.padding_y }}{% else %}0.5{% endif %}rem;
+    --button-padding_x{{section.id | handleize}}: {% if section.settings.padding_x %}{{ section.settings.padding_x }}{% else %}0.5{% endif %}rem;
+    --button-border_width{{section.id | handleize}}: {% if section.settings.border_width %}{{ section.settings.border_width }}{% else %}1{% endif %}px;
+    --button-border_radius{{section.id | handleize}}: {% if section.settings.border_radius %}{{ section.settings.border_radius }}{% else %}1{% endif %}rem;
+    --grid-gap{{section.id | handleize}}: {{ section.settings.grid_gap }}rem;
+      
+  }
+#shopify-section-{{section.id }} .dynamic-banner__content{    
+  color: var(--font-color{{section.id | handleize}}, #000);
+}
+#shopify-section-{{section.id }} .dynamic-banner__button {  
+  padding: var(--button-padding_y{{section.id | handleize}}) var(--button-padding_x{{section.id | handleize}});
+  background-color: rgba(var(--button-backkground-color{{section.id | handleize}}));
+  color: rgba(var(--button-text-color{{section.id | handleize}}));
+  border: var(--button-border_width{{section.id | handleize}}) solid rgba(var(--button-border-color{{section.id | handleize}}));  
+  border-radius: var(--button-border_radius{{section.id | handleize}});
+  font-size: {{ section.settings.button_font_dsk }}rem;
+  font-weight: {{ section.settings.button_font_weight }};
+  text-transform: {{ section.settings.button_text_transformation }};
+}
+  @media only screen and (max-width: 600px) {
+   #shopify-section-{{section.id }} .dynamic-banner__button { 
+      font-size: {{ section.settings.button_font_mob }}rem;
+    } 
+  }
+  #shopify-section-{{section.id }}  .dynamic-banner__content_heading{
+    line-height: 1;
+    font-size: {{section.settings.heading_font_dsk}}rem;
+    margin: 0px;
+    font-weight: {{section.settings.heading_font_weight}};
+    color: {{ section.settings.heading_font__color}};
+    text-transform: {{ section.settings.text_transformation }};
+  }
+  @media only screen and (max-width: 600px) {
+    #shopify-section-{{section.id }}  .dynamic-banner__content_heading{    
+      font-size: {{section.settings.heading_font_mob}}rem;
+    }
+  }
+  #shopify-section-{{section.id }}  .dynamic-banner__content_body{
+       line-height: 1;
+      font-size: {{section.settings.body_font_dsk}}rem;
+      margin: 0px;
+      font-weight: {{section.settings.body_font_weight}};
+      color: {{ section.settings.body_font__color}};    
+  }
+    @media only screen and (max-width: 600px) {
+      #shopify-section-{{section.id }} .dynamic-banner__content_body{
+        font-size: {{section.settings.body_font_mob}}rem;
+        
+      }
+    }
+
+  #shopify-section-{{section.id }} .dynamic-banner__item-2{
+    flex: 1 1 calc(50% - var(--grid-gap{{section.id | handleize}}));
+    max-width: calc(50% - var(--grid-gap{{section.id | handleize}}));
+  }
+  
+  #shopify-section-{{section.id }} .dynamic-banner__item-3{
+    flex: 1 1 calc(33.33% - var(--grid-gap{{section.id | handleize}}));
+    max-width: calc(33.33% - var(--grid-gap{{section.id | handleize}}));
+  }
+   #shopify-section-{{section.id }} .dynamic-banner {
+    gap: var(--grid-gap{{section.id | handleize}});
+   margin-bottom: {{ section.settings.margin_bottom }}rem;
+     
+  }
+
+  #shopify-section-{{section.id }} .dynamic-banner__button-container {
+      margin-top: {{ section.settings.button_margin_top }}rem;
+  }
+
+</style>
+<div class="dynamic-banner page-width">
+  {% assign block_count = section.blocks | size %} 
+  {% for block in section.blocks %}
+  
+    <div class="dynamic-banner__item dynamic-banner__item-{{ block_count }} " id="dynamic-banner__item-{{ block.id }}">
+      {% if block.settings.enable_fullgrid %}<a href="{{ block.settings.cta1_url }}">{% endif %}
+
+        <picture>
+          <source media="(max-width: 768px)" srcset="{{ block.settings.mobile_image | image_url  }}">
+          <img src="{{ block.settings.desktop_image | image_url }}" alt="{{ block.settings.heading }}" height="1" width="1">
+        </picture>
+      
+        <div class="dynamic-banner__content dynamic-banner_v-{{ block.settings.content_alignment | split: '-' | first }} dynamic-banner_h-{{ block.settings.content_alignment | split: '-' | last }}">
+          {% if block.settings.heading %}<h2 class="dynamic-banner__content_heading">{{ block.settings.heading }}</h2>{% endif %}
+          {% if block.settings.body_text %}<p class="dynamic-banner__content_body">{{ block.settings.body_text }}</p>{% endif %}
+          {% unless block.settings.enable_fullgrid  %}
+            <div class="dynamic-banner__button-container">
+            {% if block.settings.cta1_url and block.settings.cta1_label %}
+              <a href="{{ block.settings.cta1_url }}" class="dynamic-banner__button">{{ block.settings.cta1_label }}</a>
+            {% endif %}
+            {% if block.settings.cta2_url and block.settings.cta2_label %}
+              <a href="{{ block.settings.cta2_url }}" class="dynamic-banner__button">{{ block.settings.cta2_label }}</a>
+            {% endif %}
+          </div>
+          {% endunless %}
+        </div>
+
+      {% if block.settings.enable_fullgrid %}</a>{% endif %}
+      
+    </div>
+  {% endfor %}
+</div>
