@@ -1,1 +1,107 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"","heading_size":"h0"}},"button":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/man-adjusts-his-shirt-cuffs-below-watch.jpg","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}}},"order":["image_banner"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/man-adjusts-his-shirt-cuffs-below-watch.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "dynamic_banner_RwDx4E": {
+      "type": "dynamic-banner",
+      "blocks": {
+        "banner_yHU6PH": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify://shop_images/black-and-white-portrait-mens-fashion.jpg",
+            "mobile_image": "shopify://shop_images/black-white-wrist-watches.jpg",
+            "heading": "Men Fashion",
+            "body_text": "Discover Winter Collection",
+            "cta1_url": "shopify://collections",
+            "cta1_label": "Shop Now",
+            "enable_fullgrid": false,
+            "cta2_url": "shopify://collections/frontpage",
+            "cta2_label": "Shop Now",
+            "content_alignment": "center-center"
+          }
+        }
+      },
+      "block_order": [
+        "banner_yHU6PH"
+      ],
+      "settings": {
+        "grid_gap": 1,
+        "margin_bottom": 1,
+        "button_background_color": "",
+        "button_font_color": "#ffffff",
+        "border_color": "#ffffff",
+        "padding_y": 0.1,
+        "padding_x": 3,
+        "border_width": 2,
+        "border_radius": 0,
+        "button_font_dsk": 2,
+        "button_font_mob": 1.6,
+        "button_font_weight": 200,
+        "button_margin_top": 2,
+        "button_text_transformation": "uppercase",
+        "text_transformation": "uppercase",
+        "heading_font_dsk": 8,
+        "heading_font_mob": 4,
+        "heading_font_weight": 600,
+        "heading_font__color": "#ffffff",
+        "body_font_dsk": 1.6,
+        "body_font_mob": 1.6,
+        "body_font_weight": 200,
+        "body_font__color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "dynamic_banner_RwDx4E"
+  ]
+}
