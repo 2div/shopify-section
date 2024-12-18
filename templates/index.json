@@ -166,6 +166,21 @@
     "dynamic_banner_gaYU6q": {
       "type": "dynamic-banner",
       "blocks": {
+        "banner_rcgTKK": {
+          "type": "banner",
+          "settings": {
+            "desktop_image": "shopify://shop_images/stock-market-tracking-and-stocks.jpg",
+            "mobile_image": "shopify://shop_images/tablet-coffee.jpg",
+            "heading": "",
+            "body_text": "",
+            "cta1_url": "",
+            "cta1_label": "",
+            "enable_fullgrid": false,
+            "cta2_url": "",
+            "cta2_label": "",
+            "content_alignment": "center-center"
+          }
+        },
         "banner_ecgmqc": {
           "type": "banner",
           "settings": {
@@ -198,6 +213,7 @@
         }
       },
       "block_order": [
+        "banner_rcgTKK",
         "banner_ecgmqc",
         "banner_eNMFJ9"
       ],
