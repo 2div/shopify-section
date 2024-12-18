@@ -252,9 +252,9 @@
             "desktop_image": "shopify://shop_images/man-in-french-cuff-fashion.jpg",
             "heading": "New Styles",
             "body_text": "Sale on all brands",
-            "cta1_url": "",
+            "cta1_url": "shopify://collections/all",
             "cta1_label": "",
-            "enable_fullgrid": false,
+            "enable_fullgrid": true,
             "cta2_url": "",
             "cta2_label": "",
             "content_alignment": "center-start"
