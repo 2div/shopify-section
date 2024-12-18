@@ -250,6 +250,7 @@
           "type": "banner",
           "settings": {
             "desktop_image": "shopify://shop_images/man-in-french-cuff-fashion.jpg",
+            "mobile_image": "shopify://shop_images/mens-watch-and-ring.jpg",
             "heading": "New Styles",
             "body_text": "Sale on all brands",
             "cta1_url": "shopify://collections/all",
