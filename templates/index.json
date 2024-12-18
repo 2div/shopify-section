@@ -186,14 +186,14 @@
           "settings": {
             "desktop_image": "shopify://shop_images/frustrated-man-on-computer.jpg",
             "mobile_image": "shopify://shop_images/working-at-night.jpg",
-            "heading": "",
+            "heading": "SHOP NOW",
             "body_text": "",
-            "cta1_url": "",
+            "cta1_url": "shopify://collections/all",
             "cta1_label": "",
-            "enable_fullgrid": false,
+            "enable_fullgrid": true,
             "cta2_url": "",
             "cta2_label": "",
-            "content_alignment": "center-center"
+            "content_alignment": "start-center"
           }
         },
         "banner_eNMFJ9": {
