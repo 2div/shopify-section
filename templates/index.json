@@ -178,7 +178,7 @@
             "enable_fullgrid": false,
             "cta2_url": "shopify://collections/all",
             "cta2_label": "Shop Now",
-            "content_alignment": "center-center"
+            "content_alignment": "end-end"
           }
         },
         "banner_ecgmqc": {
@@ -221,7 +221,7 @@
         "grid_gap": 1,
         "margin_bottom": 1,
         "button_background_color": "#2917b0",
-        "button_font_color": "#ffffff",
+        "button_font_color": "#f7f7f7",
         "border_color": "#ffffff",
         "padding_y": 0.9,
         "padding_x": 2,
@@ -236,7 +236,7 @@
         "heading_font_dsk": 3,
         "heading_font_mob": 3,
         "heading_font_weight": 600,
-        "heading_font__color": "#ffffff",
+        "heading_font__color": "#2917b0",
         "body_font_dsk": 1.6,
         "body_font_mob": 1.6,
         "body_font_weight": 200,
